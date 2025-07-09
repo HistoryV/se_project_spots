@@ -14,4 +14,4 @@ Spots allows individuals to create their own personal photo sharing accounts. Us
 
 this webpage is deployed top github pages
 
--deployment link:https://historyv.github.io/se_project_spots/
+-[deployment link:](https://historyv.github.io/se_project_spots/)
