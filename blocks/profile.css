@@ -17,7 +17,6 @@
 
 .profile__name {
   margin: 0 0 12px;
-  font-family: poppins Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 100%;
@@ -32,8 +31,6 @@
 
 .profile__description {
   margin: 0;
-  width: 97px;
-  font-family: poppins Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
@@ -65,8 +62,8 @@
   gap: 8px;
   width: 149px;
   height: auto;
+  border: 0;
   border-radius: 8px;
-  font-family: poppins Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-style: medium;
   font-size: 16px;
