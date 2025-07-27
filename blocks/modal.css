@@ -24,12 +24,15 @@
   border-radius: 8px;
   padding: 32px 50px;
   position: relative;
+  box-sizing: border-box;
 }
 .modal__close-btn {
   background-image: url(../images/close-btn.png);
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
+  background-color: transparent;
+  border: none;
   top: 32px;
   right: 50px;
   width: 40px;
@@ -79,15 +82,32 @@
   }
 
   .modal__container {
+    padding: 24px 12px 12px 12px;
+  }
+
+  .modal__close-btn {
+    background-image: url(../images/close-btn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: 16px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
   }
 
   .modal__title {
     margin: 0 0 24px;
     font-size: 20px;
+    /* width: 93px;
+    height: 20px; */
   }
 
   .modal__form {
-    max-width: 730px;
+    width: 100%;
   }
 
   .modal__label {
@@ -101,7 +121,9 @@
   }
 
   .modal__submit-btn {
+    width: 100%;
     max-width: none;
+    border: none;
     align-self: stretch;
     width: 100%;
     padding: 16px 12px;
