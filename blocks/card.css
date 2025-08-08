@@ -26,6 +26,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  margin: 0px;
 }
 
 .card__like-btn {
@@ -38,6 +39,7 @@
   border: none;
   width: 23px;
   height: 20px;
+  cursor: pointer;
 }
 .card__like-btn:hover {
   opacity: 100%;
