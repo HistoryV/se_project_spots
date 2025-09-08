@@ -51,6 +51,7 @@
   opacity: 0.7;
   background-color: #fcf5e5;
   border: #fcf5e5;
+  border: none;
   cursor: pointer;
 }
 .profile__edit-btn:hover {
