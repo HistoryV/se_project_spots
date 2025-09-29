@@ -69,10 +69,13 @@
 .modal__form {
   display: flex;
   flex-direction: column;
+
+  margin-top: 32px;
 }
 
 .modal__label {
   margin: 0 0 32px;
+  display: block;
 }
 
 .modal__input {
@@ -84,16 +87,31 @@
   border-radius: 8px;
   box-sizing: border-box;
 }
+
+.modal__input::placeholder {
+  color: #212121;
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+}
 .modal__input:hover {
   opacity: 0.8;
 }
 
-.modal__input::placeholder {
-  color: #212121;
-  opacity: 0.3;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 100%;
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+  /*check figma*/
+}
+
+.modal__error {
+  display: block;
+  margin-top: 8px;
+  position: relative;
+  color: #ff0000b2;
+  font-family: poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  /* place the correct styling from figma*/
 }
 
 .modal__submit-btn {
@@ -103,6 +121,9 @@
   border-radius: 8px;
   color: #fcf5e5;
   cursor: pointer;
+}
+.modal__submit-btn_disabled {
+  opacity: 0.5;
 }
 .modal__submit-btn:hover {
   opacity: 0.8;
