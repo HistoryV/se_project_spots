@@ -1,3 +1,10 @@
+import "./index.css";
+import {
+  enableValidation,
+  validationConfig,
+  resetValidation,
+} from "../scripts/validate.js";
+
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -110,7 +117,7 @@ editProfileBtn.addEventListener("click", function () {
   resetValidation(
     editProfileFormEl,
     [editProfileNameInput, editProfileDescriptionInput],
-    settings
+    validationConfig
   );
   openModal(editProfileModal);
 });
@@ -151,7 +158,7 @@ function handleAddCardSubmit(evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
   newPostFormEl.reset();
-  disableButton(newPostSubmitBtn, settings);
+  disableButton(newPostSubmitBtn, validationConfig);
   closeModal(newPostModal);
 }
 newPostFormEl.addEventListener("submit", handleAddCardSubmit);
@@ -159,3 +166,5 @@ initialCards.forEach(function (card) {
   const cardElement = getCardElement(card);
   cardsList.append(cardElement);
 });
+
+enableValidation(validationConfig);

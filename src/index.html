@@ -7,18 +7,22 @@
     <meta name="description" content="image sharing plattform" />
     <meta name="author" content="History Vega" />
     <meta name="keywords" content="html css image sharing" />
-    <link rel="stylesheet" href="./pages/index.css" />
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/Logo.svg" alt="spot logo" class="header__logo" />
+        <img
+          src="<%=require(`./images/Logo.svg`)%>"
+          alt="spot logo"
+          class="header__logo"
+        />
       </header>
       <main class="content">
         <section class="profile page__section">
           <img
-            src="./images/image-2-bessie.png"
+            src="<%=require(`./images/image-2-bessie.png`)%>"
             alt="Bessie-Coleman"
             class="profile__avatar"
           />
@@ -26,13 +30,19 @@
             <h1 class="profile__name">Bessie Coleman</h1>
             <p class="profile__description">Civil Aviator</p>
             <button type="button" class="profile__edit-btn">
-              <img src="./images/edit-icon.svg" alt="edit button" /> Edit
-              Profile
+              <img
+                src="<%=require(`./images/edit-icon.svg`)%>"
+                alt="edit button"
+              />
+              Edit Profile
             </button>
           </div>
           <button type="button" class="profile__add-btn">
-            <img src="./images/newpost-icon.svg" alt="new-post-button" /> New
-            Post
+            <img
+              src="<%=require(`./images/newpost-icon.svg`)%>"
+              alt="new-post-button"
+            />
+            New Post
           </button>
         </section>
         <section class="cards page__section">
@@ -139,7 +149,5 @@
         <p class="modal__caption"></p>
       </div>
     </div>
-    <script src="./scripts/validation.js"></script>
-    <script src="./scripts/index.js"></script>
   </body>
 </html>
