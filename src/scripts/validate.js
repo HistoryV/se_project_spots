@@ -45,8 +45,6 @@ const hasInvalidInput = (inputList) => {
 };
 const toggleButtonState = (inputList, buttonElement, config) => {
   if (hasInvalidInput(inputList)) {
-    // buttonElement.disabled = true;
-    //buttonElement.classList.add("modal__submit-btn_disabled");
     disableButton(buttonElement, config);
   } else {
     enableButton(buttonElement, config);
@@ -87,7 +85,7 @@ const setEventListeners = (formElement, config) => {
 };
 export const enableValidation = (config) => {
   const formList = document.querySelectorAll(config.formSelector);
-  console.log(formList);
+
   formList.forEach((formElement) => {
     setEventListeners(formElement, config);
   });

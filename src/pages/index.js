@@ -148,9 +148,6 @@ editProfileFormEl.addEventListener("submit", handleProfileFormSubmit);
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
 
-  console.log("Image URL:", newPostImageInput.value);
-  console.log("Caption:", newPostCaptionInput.value);
-
   const inputValues = {
     name: newPostCaptionInput.value,
     link: newPostImageInput.value,

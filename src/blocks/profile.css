@@ -50,7 +50,7 @@
   gap: 8px;
   opacity: 0.7;
   background-color: #fcf5e5;
-  border: #fcf5e5;
+  border-style: none;
   border: none;
   cursor: pointer;
 }
